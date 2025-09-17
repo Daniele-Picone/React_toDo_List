@@ -22,7 +22,7 @@ function TodoList({ items, onToggle, onDelete, onEdit }) {
         )}
         
         {/* Conteggio */}
-        <p className="mt-2 text-sm text-gray-500">
+        <p >
             {remaining} task rimanenti
         </p>
         </div>

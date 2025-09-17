@@ -3,7 +3,7 @@ import { useState } from 'react';
 import ToDoForm from "./components/organisms/TodoForm.jsx";
 import TodoList from "./components/organisms/TodoList.jsx";
 import FiltererGroup from './components/molecules/FiltererGroup.jsx';
-
+import './App.css'
 function App() {
   // stato principale: lista items
   const [items, setItems] = useState([])
@@ -27,7 +27,7 @@ function App() {
   
 
   return (
-    <div className="p-4">
+    <div className="app-container">
       <h1>📝 La mia TodoList</h1>
 
       {/* Qui dovrebbe comparire l'input */}

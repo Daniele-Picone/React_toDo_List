@@ -21,7 +21,7 @@ function ToDoForm({ onAdd }) {
   }
 
   return (
-    <div className="flex gap-2 mb-4">
+    <div >
       <Input
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
