@@ -1,8 +1,9 @@
 
-import Button from "../atoms/Button"
+import Button from "../atoms/Button";
+import './FiltererGroup.css';
 function FiltererGroup({ filter, setFilter }) {
   return (
-    <div className="flex gap-2 mb-4">
+    <div className="button_section">
       <Button
         variant={filter === "all" ? "primary" : "secondary"}
         onClick={() => setFilter("all")}

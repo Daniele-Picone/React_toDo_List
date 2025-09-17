@@ -36,6 +36,7 @@ function App() {
         <FiltererGroup filter={filter} setFilter={setFilter} />
 
       {/* LISTA: riceve solo gli items filtrati */}
+      <h3>{filter === 'all' ? 'Lista delle attività': filter === 'active'? 'Attività da svolgere' : 'Attività Completate'}</h3>
       <TodoList
         items={filteredItems}
         onToggle={toggleItem}

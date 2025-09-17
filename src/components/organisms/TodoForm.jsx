@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Input from "../atoms/input";
 import Button from "../atoms/Button.jsx"
+import './TodoForm.css'
 
 function ToDoForm({ onAdd }) {
   const [todo, setTodo] = useState("")
@@ -21,8 +22,9 @@ function ToDoForm({ onAdd }) {
   }
 
   return (
-    <div >
+    <div  className='input_section' >
       <Input
+       
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
         placeholder="Inserisci cosa fare"
