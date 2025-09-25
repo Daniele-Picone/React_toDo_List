@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Button from '../atoms/Button.jsx'
-import Checkbox from '../atoms/Checkbox';
+import Button from '../atoms_temp/Button.jsx'
+import Checkbox from '../atoms_temp/Checkbox';
 import './TodoItem.css';
 
 
