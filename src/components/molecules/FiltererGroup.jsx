@@ -1,5 +1,5 @@
 
-import Button from "../atoms/Button";
+import Button from "../atoms/Button.jsx";
 import './FiltererGroup.css';
 function FiltererGroup({ filter, setFilter }) {
   return (
