@@ -1,38 +1,37 @@
 import { useState } from "react";
-import Button from "../atoms/Button.jsx"
+import Button from "../atoms/Button.jsx";
+import Input from "../atoms/Input.jsx"; // Assicurati che il file abbia la I maiuscola
 
-import './TodoForm.css'
-import Input from "../atoms/Input.jsx";
+import './TodoForm.css';
 
 function ToDoForm({ onAdd }) {
-  const [todo, setTodo] = useState("")
+  const [todo, setTodo] = useState("");
 
   // funzione per aggiungere un item
   const addItem = () => {
-    if (todo.trim() === "") return // evita item vuoti
+    if (todo.trim() === "") return; // evita item vuoti
 
     const newItem = {
       id: Date.now(),
       text: todo,
       done: false,
       createdAt: new Date().toLocaleDateString()
-    }
+    };
 
-    onAdd(newItem)        
-    setTodo("")           
-  }
+    onAdd(newItem);
+    setTodo("");
+  };
 
   return (
-    <div  className='input_section' >
+    <div className='input_section'>
       <Input
-       
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
         placeholder="Inserisci cosa fare"
       />
       <Button onClick={addItem}>➕ Aggiungi</Button>
     </div>
-  )
+  );
 }
 
-export default ToDoForm
+export default ToDoForm;
