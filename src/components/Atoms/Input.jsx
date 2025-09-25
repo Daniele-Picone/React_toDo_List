@@ -1,6 +1,6 @@
 
 import './Input.css'
-function Input({ type= 'text' , value  , onChange , placeholder , variant}) {
+ export default function Input({ type= 'text' , value  , onChange , placeholder , variant}) {
     return(
         <input 
         className={`input input-${variant}`}
@@ -12,5 +12,3 @@ function Input({ type= 'text' , value  , onChange , placeholder , variant}) {
     )
 
 }
-
-export default Input

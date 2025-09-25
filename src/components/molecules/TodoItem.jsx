@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Button from '../atoms/Button.jsx'
 import Checkbox from '../atoms/Checkbox';
-import Input from '../atoms/input.jsx';
 import './TodoItem.css';
 
 

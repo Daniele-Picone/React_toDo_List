@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../atoms/Button.jsx"
 
 import './TodoForm.css'
-import Input from "../atoms/Input.jsx";
+import Input from "atoms/Input.jsx";
 
 function ToDoForm({ onAdd }) {
   const [todo, setTodo] = useState("")
