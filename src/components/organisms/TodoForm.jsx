@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Input from "../atoms/input";
+import Input from "../Atoms/Input.jsx";
 import Button from "../atoms/Button.jsx"
 import './TodoForm.css'
 
